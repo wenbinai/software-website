@@ -1,21 +1,19 @@
 <template>
   <div>
-    <el-container>
+    <div class="base-container">
       <!--      header-->
-      <el-header>
+      <div class="header">
         <TopHeader></TopHeader>
-      </el-header>
+      </div>
       <!--      main 内容区-->
-      <el-main>
+      <div class="main">
         <router-view></router-view>
-      </el-main>
+      </div>
       <!--      footer-->
-      <el-footer>
-        <div class="footer-container">
-          <span>@东北林业大学</span>
-        </div>
-      </el-footer>
-    </el-container>
+<!--      <div class="footer">-->
+      <!--          <span>@东北林业大学</span>-->
+      <!--      </div>-->
+    </div>
   </div>
 </template>
 
@@ -29,19 +27,25 @@ export default {
 </script>
 
 <style scoped>
-/*el-header*/
-.el-header {
-  padding: 0 !important;
-  box-sizing: border-box;
-  flex-shrink: 0;
-}
 
 /*footer*/
-.footer-container {
+/*.footer-container {*/
+/*  position: absolute;*/
+/*  bottom: 10px;*/
+/*  width: 100%;*/
+/*  text-align: center;*/
+/*}*/
+.footer {
   position: absolute;
   bottom: 10px;
-  width: 100%;
-  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
+/*.footer-container {*/
+/*  position: absolute;*/
+/*  bottom: 10px;*/
+/*  width: auto;*/
+/*  text-align: center;*/
+/*}*/
 
 </style>
